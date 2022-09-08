@@ -9,8 +9,6 @@ React, {useState, useEffect, useContext, useReducer}.
 
 Реализуются приемы функциональных компонентов, но также расмотрена работа на классах. 
 
-![2022-09-08_20-40-53](https://user-images.githubusercontent.com/101303690/189137496-8daba639-b31a-4be7-a312-6de8ea740d26.png)
-
 ![2022-09-08_20-45-04](https://user-images.githubusercontent.com/101303690/189138412-f8d17bb2-b875-4bd5-a513-d6c3211faf91.png)
 
 
