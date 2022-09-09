@@ -14,7 +14,7 @@ React, {useState, useEffect, useContext, useReducer, HOC}.
 
 ![2022-09-09_08-27-53](https://user-images.githubusercontent.com/101303690/189253407-b82c04ea-83b5-471d-8af3-a240334c9325.png)
 
-Отлавливаем ошибки с помощью ErrorBoundary (ComponentDidCatch) - на примере с классовыми компонентами, что бы приложение не сломалось.
+Отлавливаем ошибки с помощью ErrorBoundary (ComponentDidCatch) - на примере с классовыми компонентами.
 
 ![2022-09-09_08-26-18](https://user-images.githubusercontent.com/101303690/189253413-26828da4-598c-49ea-9023-f3dcc461fa53.png)
 
