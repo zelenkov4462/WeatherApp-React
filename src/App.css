@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+.main {
+  background-color: #d8d8d8;
+    height: 100vh ;
+  padding: 24px;
+}
+               /*CardList start*/
+.inputWrap {
+  display: flex;
+  height: 50px;
+  border-radius: 12px ;
+  box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.25);
+  margin-bottom: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input {
+  width: 80%;
+  padding: 4px 8px ;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #3A8AC0;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  outline: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+   width: 20%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+             /*CardList finish*/
+             /*Card start*/
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select {
+  margin-bottom: 24px;
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.card {
+  width: 200px;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #3A8AC0;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 24px;
+  box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.25);
+}
+
+.card:first-child {
+  /*margin-left: 0;*/
+}
+
+.actionButtonWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actionButton {
+background: #fff;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.green {
+  background-color: lawngreen;
+}
+
+.red {
+  background-color: red;
+}
+
+.mainInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 24px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+  margin-top: 4px;
+  font-size: 16px;
 }
+
+.temperature {
+  margin-top: 12px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.temperature::after {
+  content: "\2103";
+}
+
+.information {
+  margin-top: 12px;
+}
+
+.information > div {
+  margin-top: 4px ;
+}
+
+
+/*Card finish*/

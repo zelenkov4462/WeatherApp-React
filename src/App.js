@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Input } from "./components/Input/Input";
+import React, { useState, useRef, useEffect, createContext } from "react";
+import Card from "./components/Card/Card";
+import { CardList } from "./components/CardList/CardList";
+import { useCitiesList } from "./hooks/useCitiesList";
+import { ErrorBoundary } from "./ErrorBoundary/ErrorBoundary";
+
+export const GlobalContext = createContext();
 
 function App() {
+  const [state, dispatch] = useCitiesList();
+  const { citiesList } = state;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalContext.Provider value={{ state, dispatch }}>
+      <div className="main">
+        <Input />
+        <ErrorBoundary>
+          <CardList />
+        </ErrorBoundary>
+      </div>
+    </GlobalContext.Provider>
   );
 }
 
