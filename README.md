@@ -9,7 +9,10 @@ React, {useState, useEffect, useContext, useReducer}.
 
 Реализуются приемы функциональных компонентов, но также расмотрена работа на классах. 
 
-![2022-09-08_20-45-04](https://user-images.githubusercontent.com/101303690/189138412-f8d17bb2-b875-4bd5-a513-d6c3211faf91.png)
+![2022-09-09_08-27-53](https://user-images.githubusercontent.com/101303690/189253407-b82c04ea-83b5-471d-8af3-a240334c9325.png)
 
+Отлавливаем ошибки с помощью ErrorBoundary (ComponentDidCatch) - на примере с классовыми компонентами, что бы приложение не сломалось.
+
+![2022-09-09_08-26-18](https://user-images.githubusercontent.com/101303690/189253413-26828da4-598c-49ea-9023-f3dcc461fa53.png)
 
 В процессе реализации ...
