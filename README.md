@@ -1,4 +1,4 @@
-React, {useState, useEffect, useContext, useReducer, HOC}.
+React, {useState, useEffect, useContext, useReducer, HOC}, react-router-dom.
 
 Приложение - Получение погоды с внешнего API по названию города.
 
@@ -7,15 +7,18 @@ React, {useState, useEffect, useContext, useReducer, HOC}.
 2. Удаление карточки города из списка городов.
 3. Редактирование карточки - изменение названия города, которое было указано в карточке и обновление списка карточек.
 4. Сортировка списка карточек по алфавиту и наоборот.
+5. В случае неверно введенного города - приложение не падает, а выводится введенное название в отдельной карточке с описанием "Not founded".
+6. При нажатии на карточку - проваливаемся на отдельную страницу выбранного города с доступом погоды на ближайшие 5 дней.
+7. Роутинг - {Layout, Outlet, useParams, useNavigate, useLocation, useMatch, Navigate, Link}.
+
 
 Реализуются приемы функциональных компонентов, но также расмотрена работа на классах. 
 Создание кастомных хуков - (useCitiesList, useWeather).
 Работа с Компонентами Высшего Порядка.
 
-![2022-09-09_08-27-53](https://user-images.githubusercontent.com/101303690/189253407-b82c04ea-83b5-471d-8af3-a240334c9325.png)
 
-Отлавливаем ошибки с помощью ErrorBoundary (ComponentDidCatch) - на примере с классовыми компонентами.
+![2022-09-12_15-17-19](https://user-images.githubusercontent.com/101303690/189605765-0e4dd5ff-1a5c-48e0-a91a-dcc6aa59d694.png)
+![2022-09-12_15-16-52](https://user-images.githubusercontent.com/101303690/189605775-74eb85c3-4300-453e-9c45-4dbcc045e64c.png)
 
-![2022-09-09_08-26-18](https://user-images.githubusercontent.com/101303690/189253413-26828da4-598c-49ea-9023-f3dcc461fa53.png)
-
-В процессе реализации ...
+Вы можете посмотреть данную работу по адресу: 
+https://zelenkov4462.github.io/home
