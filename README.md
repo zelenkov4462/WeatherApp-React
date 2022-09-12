@@ -20,4 +20,4 @@ React, {useState, useEffect, useContext, useReducer, HOC}, react-router-dom.
 ![2022-09-12_15-17-19](https://user-images.githubusercontent.com/101303690/189605765-0e4dd5ff-1a5c-48e0-a91a-dcc6aa59d694.png)
 
 Вы можете посмотреть данную работу по адресу: 
-https://zelenkov4462.github.io/home
+https://zelenkov4462.github.io/WeatherApp-React/
