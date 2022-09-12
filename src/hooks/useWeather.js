@@ -8,7 +8,19 @@ export const useWeather = (city) => {
   useEffect(() => {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
-    ).then((res) => res.json().then(setData));
+    )
+      .then((res) => res.json())
+      .then((fetchedData) => {
+        // if (fetchedData && fetchedData.cod && fetchedData.cod === "404") {
+        if (fetchedData?.cod === "404") {
+          throw new Error("CITY_NOT_FOUND");
+        } else {
+          setData(fetchedData);
+        }
+      })
+      .catch((err) => {
+        setData(null);
+      });
   }, [city]);
   return data;
 };

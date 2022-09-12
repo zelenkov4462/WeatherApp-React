@@ -3,11 +3,11 @@ import Card from "../Card/Card";
 import { GlobalContext } from "../../App";
 import { withGlobalState } from "../../hocs/withGlobalState";
 
-class CardListNoState extends React.Component {
+export class CardListNoState extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      orderBy: "name",
+      orderBy: "asc",
     };
     this.handleOnChange = this.handleOnChange.bind(this);
   }
@@ -26,9 +26,9 @@ class CardListNoState extends React.Component {
       sortedCitiesList.reverse();
     }
 
-    if (sortedCitiesList.length === 7) {
-      throw new Error("I crashed!");
-    }
+    // if (sortedCitiesList.length === 7) {
+    //   throw new Error("I crashed!");
+    // }
     return (
       <>
         <select
@@ -36,8 +36,8 @@ class CardListNoState extends React.Component {
           value={orderBy}
           onChange={this.handleOnChange}
         >
-          <option value="desc">By name desc</option>
           <option value="asc">By name asc</option>
+          <option value="desc">By name desc</option>
         </select>
         <div className="cardList">
           {citiesList.map((city) => (

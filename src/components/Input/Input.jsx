@@ -1,5 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { GlobalContext } from "../../App";
+import InputTag from "./InputTag";
 export const Input = () => {
   const ref = useRef(null);
   const {
@@ -41,13 +42,7 @@ export const Input = () => {
   };
   return (
     <div className="inputWrap">
-      <input
-        ref={ref}
-        className="input"
-        value={inputValue}
-        onChange={handleOnChange}
-        placeholder="Введите название города"
-      />
+      <InputTag {...{ handleOnChange, inputValue, ref }} />
       {editingCity ? (
         <button className="button" onClick={handleOnDone}>
           Done
